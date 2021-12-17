@@ -1,38 +1,128 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#343a40;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.App a{
+  color:red;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.timer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 200px;
+  width: 80%;
+  margin: 60px auto;
+  padding: 0;
+  font-size: 48px;
+}
+
+.column{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dateWithDigit{
+  font-size: 200px;
+  text-shadow:1px 2px 2px blue;
+}
+
+.dateWithString{
+  font-size: 24px;
+}
+
+.date{
+  width: 300px;
+  padding: 5px 0;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+  color: black;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  .App h3{
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+  .timer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 200px;
+    width: 95%;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .dateWithDigit{
+    font-size: 60px;
+    text-shadow:1px 2px 2px blue;
+  }
+  .dateWithString{
+    font-size: 12px;
+  }
+  .App a{
+    color:red;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App h3{
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .timer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 200px;
+    width: 95%;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .dateWithDigit{
+    font-size: 60px;
+    text-shadow:1px 2px 2px blue;
+  }
+  .dateWithString{
+    font-size: 12px;
+  }
+  .App a{
+    color:red;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
   }
 }
