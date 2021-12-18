@@ -2,6 +2,7 @@ import React from 'react';
 import Countdown,{ zeroPad } from 'react-countdown';
 import './App.css';
 import SocialMediaIcons from './app/SocialMediaIcons';
+import logo from './media/amazone_mini.png';
 
 // Random component
 const Completionist = () => <span>Презентация начинается перейдите по ссылке</span>;
@@ -23,17 +24,18 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 }
 
 function App() {
-  let birthday = new Date('December 18, 2021 19:00:00')
+  let exactDate = new Date('December 18, 2021 19:00:00')
   return (
     <div className="App">
       <p>Презентация</p>
-      <h3>Мы научим вас как за короткое время начать бизнес на амазон.</h3>
+      <h3><span className="redText">Кыргызстанда</span> отуруп, <span className="redText">Америкада</span> бизнес кылуу реалдуу.</h3>
+      <img src={logo} alt="logo"/>
       <Countdown
-        date={Date.parse(birthday)}
+        date={Date.parse(exactDate)}
         renderer={renderer}
       />  
       <div className="date">2021-12-18 19:00</div>
-      <a href="http://"><strong>&#8594;</strong>  Ссылка для презентации <strong>&#8592;</strong></a>
+      <a href="https://www.youtube.com/watch?v=TC4BBjdUlyc"><strong>&#8594;</strong>  Ссылка для презентации <strong>&#8592;</strong></a>
       <SocialMediaIcons/> 
     </div>
   );
