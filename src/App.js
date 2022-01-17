@@ -24,7 +24,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 }
 
 function App() {
-  let exactDate = new Date('December 18, 2021 19:00:00')
+  let exactDate = new Date('June 18, 2022 19:00:00')
   return (
     <div className="App">
       <p>Презентация</p>
@@ -35,7 +35,7 @@ function App() {
         renderer={renderer}
       />  
       <div className="date">2021-12-18 19:00</div>
-      <a href="https://www.youtube.com/watch?v=TC4BBjdUlyc"><strong>&#8594;</strong>  Ссылка для презентации <strong>&#8592;</strong></a>
+      <a href="#"><strong>&#8594;</strong>  Ссылка для презентации <strong>&#8592;</strong></a>
       <SocialMediaIcons/> 
     </div>
   );
