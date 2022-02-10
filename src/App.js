@@ -35,7 +35,7 @@ function App() {
         renderer={renderer}
       />  
       <div className="date">2022-10-12 00:00</div>
-      <a href="#"><strong>&#8594;</strong>  Ссылка для презентации <strong>&#8592;</strong></a>
+      <a href="https://www.youtube.com/channel/UCaS-gz_O5IBdsjgnjy_iJQg"><strong>&#8594;</strong>  Ссылка для презентации <strong>&#8592;</strong></a>
       <SocialMediaIcons/> 
     </div>
   );
