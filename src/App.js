@@ -24,7 +24,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 }
 
 function App() {
-  let exactDate = new Date('October 12, 2022 00:00:00')
+  let exactDate = new Date('December 31, 2022 00:00:00')
   return (
     <div className="App">
       <p>Презентация</p>
